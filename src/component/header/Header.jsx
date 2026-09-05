@@ -1,4 +1,7 @@
+import coffeelogo from '../../assets/CqvMN.jpg'
+
 function Header(){
+
   return(
 
     // header
@@ -8,9 +11,12 @@ function Header(){
     {/* logo */}
     <div class="flex lg:flex-1">
    
-    <img src="./assets/coffeeshop logo.jpg" alt="Coffeeshop Logo" />   
+    <img  class="h-16 w-auto size-18
+     rounded-full bg-radial-[at_50%_75%] 
+     from-sky-200 via-blue-400 to-indigo-900 to-90%
+      scale-95 hover:scale-120  "  src={coffeelogo} alt="Coffeeshop Logo" />   
  </div>
- 
+    
       {/* Nav List  */}
    <ul class="flex flex-col md:flex-row gap-10 " >
         <li><a href="#"  class="text-sm/6 font-semibold text-white">Home</a></li>
@@ -38,6 +44,8 @@ function Header(){
         
         </button>
      </div>
+
+        
     </header>
     
   )

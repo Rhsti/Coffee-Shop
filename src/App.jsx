@@ -1,5 +1,6 @@
 import './App.css'
 import Header from './component/header/Header'
+import Herosection from './component/herosection/Herosection'
 
 function App() {
  
@@ -8,9 +9,7 @@ function App() {
     <>
     <Header/>
     
-    <section class="bg-red-950 h-80">
-     <h1>Welcome</h1>
-    </section>
+    <Herosection/>
       
     
     </>
