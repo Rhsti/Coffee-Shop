@@ -4,7 +4,15 @@
 @tailwind utilities;
 
 
-
+@layer base {
+  header img {
+    @apply h-16 w-auto size-18
+     rounded-full bg-radial-[at_50%_75%] 
+     from-sky-200 via-blue-400 to-indigo-900 to-90%
+      scale-95 hover:scale-120 ml-12 ;
+  }
+ 
+}
 
 @layer components {
   .Link-style {
