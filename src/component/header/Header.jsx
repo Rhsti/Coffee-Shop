@@ -1,4 +1,6 @@
 import coffeelogo from '../../assets/CqvMN.jpg'
+import { Link } from 'react-router-dom'
+import './Header.css'
 
 function Header(){
 
@@ -19,11 +21,11 @@ function Header(){
     
       {/* Nav List  */}
    <ul class="flex flex-col md:flex-row gap-10 " >
-        <li><a href="#"  class="text-sm/6 font-semibold text-white">Home</a></li>
-        <li><a href="#"  class="text-sm/6 font-semibold text-white">Menu</a></li>
-        <li><a href="#"  class="text-sm/6 font-semibold text-white">About</a></li>
-        <li><a href="#"  class="text-sm/6 font-semibold text-white">Location</a></li>
-        <li><a href="#"  class="text-sm/6 font-semibold text-white">Contact</a></li>
+        <li><Link to="#"  class="Link-style">Home</Link></li>
+        <li><Link to="#"  class="Link-style">Menu</Link></li>
+        <li><Link to="/About"  class="Link-style">About</Link></li>
+        <li><Link to="#"  class="Link-style">Location</Link></li>
+        <li><Link to="#"  class="Link-style">Contact</Link></li>
       </ul>
  
       
