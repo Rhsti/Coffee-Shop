@@ -5,25 +5,33 @@ import { useState } from 'react'
 
 function Header(){
  const [open, setOpen] = useState(false);
+ const navLinks = [
+  { name: 'Home', to: '/' },
+  { name: 'Menu', to: '/Menu' },
+  { name: 'About', to: '/About' },
+  { name: 'Location', to: '#' },
+  { name: 'Contact', to: '#' },
+]
   return(
 
     // header items-start
     <header  className="bg-red-950 py-3 ">
     {/* nav */}
-    <nav className="mx-auto flex  max-w-7xl md:items-center    md:justify-between py-6 lg:px-8">
+    <nav className="mx-auto flex  max-w-7xl md:items-center 
+       md:justify-between py-6 lg:px-8">
     {/* logo   lg:flex-1*/}
     <div className="flex">
    
-    <img  src={coffeelogo} alt="Coffeeshop Logo" />   
+    <img className='w-full max-w-20 '  src={coffeelogo} alt="Coffeeshop Logo" />   
  </div>
     
       {/* Nav List  */}
-   <ul className="flex flex-col md:flex-row gap-10 hidden  md:block md:flex py-12 md:py-0 md:pr-8 " >
-        <li><Link to="/"  className="Link-style">Home</Link></li>
-        <li><Link to="/Menu"  className="Link-style">Menu</Link></li>
-        <li><Link to="/About"  className="Link-style">About</Link></li>
-        <li><Link to="#"  className="Link-style">Location</Link></li>
-        <li><Link to="#"  className="Link-style">Contact</Link></li>
+   <ul className=" md:flex-row gap-10 hidden  md:flex py-12 md:py-0 md:pr-8 " >
+       {navLinks.map((link) => (
+         <li key={link.name}>
+          <Link to={link.to} className='Link-style'>{link.name}</Link>
+         </li>
+       ))}
       </ul>
  
       
@@ -48,11 +56,13 @@ function Header(){
     {open && (
      
         <ul className="md:hidden flex flex-col gap-8 px-6 py-8 items-center ">
-          <li><Link to="/" className="Link-style" onClick={() => setOpen(false)}>Home</Link></li>
-          <li><Link to="/Menu" className="Link-style" onClick={() => setOpen(false)}>Menu</Link></li>
-          <li><Link to="/About" className="Link-style" onClick={() => setOpen(false)}>About</Link></li>
-          <li><Link to="#" className="Link-style" onClick={() => setOpen(false)}>Location</Link></li>
-          <li><Link to="#" className="Link-style" onClick={() => setOpen(false)}>Contact</Link></li>
+          {navLinks.map((link) => (
+          <li key={link.name}>
+            <Link to={link.to} className="Link-style" onClick={() => setOpen(false)}>
+            {link.name}</Link>
+            </li>
+
+          ))}
         </ul>
       )}
         

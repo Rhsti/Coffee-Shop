@@ -1,3 +1,4 @@
+import Footer from "../../component/footer/Footer"
 import Header from "../../component/header/Header"
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"
 
@@ -11,14 +12,14 @@ function About() {
     <>
  
     <Header/>
-   <main className="grid md:grid-cols-2  grid-cols-1 gap-5
+   <section className="grid md:grid-cols-2  grid-cols-1 gap-5
     md:mt-20  md:ml-10 md:p-4  pr-10  md:mr-0">
     <div className="  md:mt-0 mt-10 ml-10  md:ml-0 ">
-      <img className="md:w-150 w-100  rounded-4xl  " src="https://img.magnific.com/free-photo/cute-brunette-girl-barista-cafe-staff-pouring-water-from-kettle-brewing-filter-coffee-cou_1258-138368.jpg?semt=ais_hybrid&w=740&q=80"
-       alt="A man who pure coffe into the cup in the caffee" />
+      <img className="w-full max-w-150 h-auto  rounded-4xl  mx-auto " src="https://img.magnific.com/free-photo/cute-brunette-girl-barista-cafe-staff-pouring-water-from-kettle-brewing-filter-coffee-cou_1258-138368.jpg?semt=ais_hybrid&w=740&q=80"
+       alt="A woman pouring coffee into a cup at the cafe" />
     </div>
     <div className=" ">
-       <h2 className="text-4xl underline text-center ">About Us </h2>
+       <h1 className="text-4xl underline text-center ">About Us </h1>
     <p className=" text-center w-100%  mt-13 text-xl leading-10
      tracking-wide ml-10 md:ml-0">
       At Coffee House in Berdorf. Germony: we pride ourseives on being o
@@ -43,7 +44,9 @@ function About() {
 </ul>
 
 </div>
-   </main>
+   </section>
+   
+   <Footer/>
     </>
   )
 }
