@@ -9,8 +9,8 @@ function Header(){
   { name: 'Home', to: '/' },
   { name: 'Menu', to: '/Menu' },
   { name: 'About', to: '/About' },
-  { name: 'Location', to: '#' },
-  { name: 'Contact', to: '#' },
+  { name: 'Location', to: '/Location' },
+  { name: 'Contact', to: '/Contact' },
 ]
   return(
 

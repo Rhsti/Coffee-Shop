@@ -6,12 +6,18 @@ function Home() {
   return (
     // <div >
   <>
-    <Header/>
-    <Herosection/>
-    <main>
-<h2 className=''>Hello  My sliver</h2>
-    </main>
-    <Footer/>
+   
+   
+    <div className="min-h-screen flex flex-col">
+       <Header/>
+        <Herosection/>
+      {/* Your page content */}
+      <main className="flex-1">
+       
+      </main>
+
+      <Footer />
+    </div>
     </>
   )
 }
