@@ -6,7 +6,7 @@ function Location() {
     <div className="min-h-screen flex flex-col">
       <Header/>
       <main className="flex-1  flex  items-center justify-center">
-     <div className=" mx-10 mt-16 w-120 md:w-170 h-full  bg-sky-100 flex flex-col justify-center items-center">
+     <div className=" mx-10 mt-16 w-120 md:w-170 h-full  bg-sky-50 flex flex-col justify-center items-center">
          <div>
              <h1 className="text-4xl py-8 ">Directions</h1>
          </div>
