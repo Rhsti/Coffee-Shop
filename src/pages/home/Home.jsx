@@ -69,6 +69,7 @@ function Home() {
         </div>
         
         </section>
+        
       </main>
 
       <Footer />
